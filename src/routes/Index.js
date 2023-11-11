@@ -1,3 +1,3 @@
 export default function Index() {
-    return <p>"temp"</p>;
+    return <div style={{height: "200vh"}}></div>;
 }
