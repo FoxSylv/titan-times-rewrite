@@ -18,7 +18,7 @@ export default function Header(props) {
     return (
         <header className={headerClasses.concat(` ${props.className}`)} style={{width: props.hasFlares ? `calc(100% - 4 * ${flareWidth}rem)` : "100%", height: `${flareHeight}rem`}}>
             <Flare width={props.hasFlares ? flareWidth : 0} height={flareHeight} className="float-left -translate-x-1/2" />
-            <div className="flex-grow">
+            <div className={`flex-grow transition-all duration-700 ${props.hasFlares ? "-mx-8" : ""}`}>
                 {props.children}
             </div>
             <Flare width={props.hasFlares ? flareWidth : 0} height={flareHeight} className="float-right translate-x-1/2" />

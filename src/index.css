@@ -6,3 +6,22 @@
     font-family: "Minecraft";
     src: url("./assets/fonts/minecraft-font/MinecraftRegular.otf");
 }
+@font-face {
+    font-family: "Open Sans";
+    src: url("./assets/fonts/Open_Sans/static/OpenSans-Regular.ttf");
+}
+@font-face {
+    font-family: "Inter";
+    src: url("./assets/fonts/Inter/static/Inter-Regular.ttf");
+}
+@font-face {
+    font-family: "Inter";
+    src: url("./assets/fonts/Inter/static/Inter-Bold.ttf");
+}
+
+body {
+    font-family: "Open Sans",sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    color: rgb(38, 38, 38);
+}
