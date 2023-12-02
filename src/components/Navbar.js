@@ -18,7 +18,7 @@ function SearchButton(props) {
 function NavLinks(props) {
     return (
         <nav className={props.className}>
-            <Link to="/vol1" className={props.linkClassName}>
+            <Link to="/news/vol1" className={props.linkClassName}>
                 News
             </Link>
             <Link to="/leaderboard" className={props.linkClassName}>

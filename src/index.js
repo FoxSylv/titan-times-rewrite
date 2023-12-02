@@ -7,18 +7,23 @@ import reportWebVitals from './reportWebVitals';
 import Root from './routes/Root';
 import ErrorPage from './routes/ErrorPage';
 import Index from './routes/Index';
+import News from './routes/News';
+import { newsRegistry } from './data/newsRegistry.js';
 
 
 const router = createBrowserRouter([{
     path: "/",
     element: <Root />,
+    id: "root",
+    loader: () => newsRegistry,
     errorElement: <ErrorPage />,
-    //This nesting allows the root (e.g. header) to appear on the error pages
+    //This nesting allows the root (e.g. navbar) to appear on the error pages
     children: [{
         path: "*",
         errorElement: <ErrorPage />,
         children: [
             {index: true, element: <Index />},
+            {path: "news/:newsLink", element: <News />},
             {path: "*", element: <ErrorPage is404="true" />}
         ]
     }]
