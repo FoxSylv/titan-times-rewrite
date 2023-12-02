@@ -1,3 +1,4 @@
+import Slider from '../components/Slider';
 import ANO from '../assets/ANO.png';
 
 export default function Index() {
@@ -29,6 +30,10 @@ export default function Index() {
                 </h2>
             </div>
         </div>
+        <Slider className="bg-black">
+            <div><h1>Slider</h1></div>
+            <div><h1>Test</h1></div>
+        </Slider>
         <div style={{height: "200vh", backgroundColor: "black"}}></div> {/* For Testing Scroll-Reliant Features */}
     </>);
 }

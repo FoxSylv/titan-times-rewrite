@@ -66,7 +66,7 @@ export default function Navbar() {
         </div>
 
         {/* Main header*/}
-        <Header height="4.375" hasFlares={scrollPosition <= 24} className="sticky top-0 mt-6 shadow-xl">
+        <Header height="4.375" hasFlares={scrollPosition <= 24} className="sticky z-30 top-0 mt-6 shadow-xl">
             <div className="h-full md:pl-4 flex text-white">
                 <div className="h-full px-4 flex items-center font-header font-semibold">
                     <Link to="/" title="Homepage" className={`flex items-center transition-all duration-700 pr-0 xs:pr-12 mr-2 ${scrollPosition <= 24 ? "px-2" : ""}py-1 ${buttonClasses} rounded-2xl`}>
