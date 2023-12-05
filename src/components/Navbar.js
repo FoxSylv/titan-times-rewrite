@@ -4,6 +4,7 @@ import Header from './Header';
 import ANO from '../assets/ANO.png';
 import { ReactComponent as Search } from '../assets/search.svg';
 import { ReactComponent as Arrow } from '../assets/arrow.svg';
+import { newsRegistry } from '../data/newsRegistry.js';
 
 
 function SearchButton(props) {
@@ -18,7 +19,7 @@ function SearchButton(props) {
 function NavLinks(props) {
     return (
         <nav className={props.className}>
-            <Link to="/news/vol1" className={props.linkClassName}>
+            <Link to={`/news/vol${newsRegistry.length}`} className={props.linkClassName}>
                 News
             </Link>
             <Link to="/leaderboard" className={props.linkClassName}>
@@ -42,7 +43,7 @@ export default function Navbar() {
 
 
     let [isSubOpen, setIsSubOpen] = useState(false);
-    const buttonClasses = "rounded-lg hover:bg-zinc-800 transition-all";
+    const buttonClasses = "rounded-lg hover:bg-zinc-800 transition-all duration-300";
 
 
     return (<>
@@ -61,7 +62,7 @@ export default function Navbar() {
                         <SearchButton className={`p-2 ${buttonClasses}`} />
                     </div>
                 </div>
-                <NavLinks className="mt-4 flex flex-col" linkClassName="p-4 font-header font-semibold text-white text-2xl odd:bg-zinc-900 hover:bg-zinc-800 transition-all" />
+                <NavLinks className="mt-4 flex flex-col" linkClassName="p-4 font-header font-semibold text-white text-2xl odd:bg-zinc-900 hover:bg-zinc-800 transition-all duration-300" />
             </div>
         </div>
 
@@ -69,7 +70,7 @@ export default function Navbar() {
         <Header height="4.375" hasFlares={scrollPosition <= 24} className="sticky z-30 top-0 mt-6 shadow-xl">
             <div className="h-full md:pl-4 flex text-white">
                 <div className="h-full px-4 flex items-center font-header font-semibold">
-                    <Link to="/" title="Homepage" className={`flex items-center transition-all duration-700 pr-0 xs:pr-12 mr-2 ${scrollPosition <= 24 ? "px-2" : ""}py-1 ${buttonClasses} rounded-2xl`}>
+                    <Link to="/" title="Homepage" className={`flex items-center transition-all duration-300 pr-0 xs:pr-12 mr-2 ${scrollPosition <= 24 ? "px-2" : ""}py-1 ${buttonClasses} rounded-2xl`}>
                         <img src={ANO} alt="Titan's Valor logo" className="h-12" />
                         <p className="font-minecraft text-2xl translate-y-[10%] hidden xs:inline">
                             [ANO]
@@ -79,7 +80,7 @@ export default function Navbar() {
                 </div>
                 <div className="flex-grow flex flex-row-reverse items-center">
                     <SearchButton className={`${buttonClasses} p-3 mr-2 hidden md:inline`} />
-                    <button title="Navigate" className={`${buttonClasses} p-2 inline md:hidden`} onClick={() => setIsSubOpen(!isSubOpen)}>
+                    <button title="Navigate" className={`${buttonClasses} p-2 mr-2 inline md:hidden`} onClick={() => setIsSubOpen(!isSubOpen)}>
                         <svg width="2rem" height="2rem" viewBox="0 0 24 24" alt="Navigate Button">
                             <path d="M5 6h14M5 12h14M5 18h14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"></path>
                         </svg>
