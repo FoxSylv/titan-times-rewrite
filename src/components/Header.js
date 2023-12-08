@@ -15,10 +15,11 @@ export default function Header(props) {
     const flareWidth = flareHeight * flareRatio / 2;
 
     const headerClasses = "m-auto bg-zinc-950 text-white transition-all duration-700 flex align-center";
+    const width = props.width ?? (props.hasFlares ? `calc(100% - 4 * ${flareWidth}rem)` : "100%");
     return (
-        <header className={headerClasses.concat(` ${props.className}`)} style={{width: props.hasFlares ? `calc(100% - 4 * ${flareWidth}rem)` : "100%", height: `${flareHeight}rem`}}>
+        <header className={headerClasses.concat(` ${props.className}`)} style={{width: width, height: `${flareHeight}rem`}}>
             <Flare width={props.hasFlares ? flareWidth : 0} height={flareHeight} className="float-left -translate-x-1/2" />
-            <div className={`flex-grow transition-all duration-700 ${props.hasFlares ? "-mx-8" : ""}`}>
+            <div className="flex-grow overflow-hidden transition-all duration-700" style={props.hasFlares ? {marginLeft: `-${flareWidth}rem`, marginRight: `-${flareWidth}rem`} : {}}>
                 {props.children}
             </div>
             <Flare width={props.hasFlares ? flareWidth : 0} height={flareHeight} className="float-right translate-x-1/2" />

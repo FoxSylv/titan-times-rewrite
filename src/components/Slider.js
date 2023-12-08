@@ -29,7 +29,7 @@ export default function Slider(props) {
 
     return (
         <div className={`overflow-hidden cursor-ew-resize select-none ${props.className ?? ""}`} onMouseDown={(e) => startDragging(e)}>
-            <div className="flex justify-center" style={{transform: `translateX(${pos}px)`}}>
+            <div className="flex justify-center items-center h-full" style={{transform: `translateX(${pos}px)`}}>
                 {props.children}
             </div>
         </div>
