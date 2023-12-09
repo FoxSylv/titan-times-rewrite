@@ -291,10 +291,10 @@ export default function Volume4() {
             <strong>
                 Trivia Fact
             </strong> ✨
-            <TriviaFact>
-                If (or should I say when) all the ice on the planet were to melt, the sea level would rise about 79.9 meters (about 260 feet).
-            </TriviaFact>
         </p>
+        <TriviaFact>
+            If (or should I say when) all the ice on the planet were to melt, the sea level would rise about 79.9 meters (about 260 feet).
+        </TriviaFact>
         <h3>
             Closing Remarks
         </h3>
