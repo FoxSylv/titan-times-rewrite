@@ -45,7 +45,7 @@ export default function News() {
             <h1 className="mt-12">
                 Titan Times, A New Edition
             </h1>
-            <article className="mt-8">
+            <article className="mt-8 mb-32">
                 {volume?.route ?? <ErrorPage is404="true" />}
             </article>
         </div>
