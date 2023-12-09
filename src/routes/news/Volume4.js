@@ -2,10 +2,11 @@ import TriviaFact from '../../components/TriviaFact';
 
 export default function Volume4() {
     return (<>
-        <blockquote> Good evening companions and comrades, and welcome to another volume of everyone’s favorite guild publication, Titan Times; the best place to go for everything ANO and thoughtful insights into all things Wynn! <strike>
+        <p>
+            Good evening companions and comrades, and welcome to another volume of everyone’s favorite guild publication, Titan Times; the best place to go for everything ANO and thoughtful insights into all things Wynn! <strike>
                 This is definitely not the third time this volume has been written
             </strike>. I hope all of Salted’s patch notes haven’t made you completely sick of the Hero Beta yet, cause we’ll be getting to that shortly. But first, the usual. Let’s not keep y’all in my intro any longer!
-        </blockquote>
+        </p>
         <h2>
             Recent Happenings 📅
         </h2>
