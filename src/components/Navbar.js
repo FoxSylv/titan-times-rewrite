@@ -70,17 +70,17 @@ export default function Navbar() {
         <Header height="4.375" hasFlares={scrollPosition <= 24} className="sticky z-30 top-0 mt-6 shadow-xl">
             <div className="h-full md:pl-4 flex text-white">
                 <div className="h-full px-4 flex items-center font-header font-semibold">
-                    <Link to="/" title="Homepage" className={`flex items-center transition-all duration-300 pr-0 xs:pr-12 mr-2 ${scrollPosition <= 24 ? "px-2" : ""}py-1 ${buttonClasses} rounded-2xl`}>
+                    <Link to="/" title="Homepage" className={`flex items-center transition-all duration-300 lg:mr-12 pl-2 pr-4 rounded-2xl ${buttonClasses}`}>
                         <img src={ANO} alt="Titan's Valor logo" className="h-12" />
                         <p className="font-minecraft text-2xl translate-y-[10%] hidden xs:inline">
                             [ANO]
                         </p>
                     </Link>
-                    <NavLinks className="hidden md:flex items-center gap-6 mr-8" linkClassName={`px-4 py-1 ${buttonClasses}`} />
+                    <NavLinks className="hidden lg:flex items-center gap-6 mr-8" linkClassName={`px-4 py-1 ${buttonClasses}`} />
                 </div>
                 <div className="flex-grow flex flex-row-reverse items-center">
-                    <SearchButton className={`${buttonClasses} p-3 mr-2 hidden md:inline`} />
-                    <button title="Navigate" className={`${buttonClasses} p-2 mr-2 inline md:hidden`} onClick={() => setIsSubOpen(!isSubOpen)}>
+                    <SearchButton className={`${buttonClasses} p-3 mr-2 hidden lg:inline`} />
+                    <button title="Navigate" className={`${buttonClasses} p-2 mr-2 inline lg:hidden`} onClick={() => setIsSubOpen(!isSubOpen)}>
                         <svg width="2rem" height="2rem" viewBox="0 0 24 24" alt="Navigate Button">
                             <path d="M5 6h14M5 12h14M5 18h14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"></path>
                         </svg>
