@@ -61,19 +61,23 @@ h5 {
     @apply text-xl;
 }
 h6 {
-    @apply text-lg text-right;
+    @apply text-lg text-right mr-8;
+}
+p a {
+    @apply text-sky-500 focus:underline hover:underline;
+}
+p img {
+    @apply inline;
 }
 
 /* `article > p:first-child` is for the volume synopses, which must be styled specially */
 article > p:first-child, blockquote {
     @apply text-zinc-400 border-l border-zinc-400 ml-4 md:ml-8 pl-4;
 }
-article > p > a {
-    @apply text-sky-500 focus:underline hover:underline;
-}
 code {
     @apply bg-zinc-100 text-red-500 px-2 py-1 rounded-sm;
 }
+
 
 ul {
     @apply list-disc;
@@ -90,4 +94,8 @@ table {
 }
 tbody tr {
     @apply border-t border-zinc-300 odd:bg-zinc-50;
+}
+
+.qna > p { /* Indent Q&A answers. See vol. 4 for an example */
+    @apply ml-4 md:ml-12;
 }

@@ -43,7 +43,7 @@ export default function News() {
                 {volume.dateOfPublication}
             </h5>
             <h1 className="mt-12">
-                Titan Times, A New Edition
+                Titan Times, A New Edition {volumeNum > 2 ? "📰" : ""}
             </h1>
             <article className="mt-8 mb-32">
                 {volume?.route ?? <ErrorPage is404="true" />}
