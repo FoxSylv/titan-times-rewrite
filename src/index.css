@@ -32,6 +32,8 @@ body {
     color: rgb(38, 38, 38);
 }
 
+
+
 ul, ol, h1, h2, h3, h4, h5, h6 {
     @apply mt-8;
 }
@@ -59,21 +61,28 @@ h5 {
     @apply text-xl;
 }
 h6 {
-    @apply text-lg;
+    @apply text-lg text-right;
 }
 
-article > p:first-child {
+/* `article > p:first-child` is for the volume synopses, which must be styled specially */
+article > p:first-child, blockquote {
     @apply text-zinc-400 border-l border-zinc-400 ml-4 md:ml-8 pl-4;
 }
+article > p > a {
+    @apply text-sky-500 focus:underline hover:underline;
+}
 code {
-    @apply bg-zinc-100 text-red-500 px-2 py-1;
+    @apply bg-zinc-100 text-red-500 px-2 py-1 rounded-sm;
 }
 
-li::marker {
-    content: "•  ";
+ul {
+    @apply list-disc;
+}
+ol {
+    @apply list-decimal;
 }
 li {
-    @apply ml-8 md:ml-12;
+    @apply ml-8 md:ml-12 my-2;
 }
 
 table {
