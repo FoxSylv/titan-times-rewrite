@@ -15,16 +15,20 @@ export default function News() {
         document.title = `Volume ${volumeNum + 1} - Titan Times`;
     }, [volumeNum]);
 
-    const volumeListing = newsRegistry.map((newsData, volumeNum) => {
-        return <Link to={`/news/vol${volumeNum + 1}`} key={`headerVol${volumeNum}`} className="hover:bg-zinc-800 focus:bg-zinc-800 transition-all duration-300 h-3/4 mx-3 rounded-md flex items-center" draggable="false">
-            <h3 className="w-24 text-center font-header font-bold text-sm m-0">
-                {`Volume ${volumeNum + 1}`}
+    const volumeListing = newsRegistry.map((newsData, volNum) => {
+        return <Link to={`/news/vol${volNum + 1}`} key={`headerVol${volNum}`} className={`${volumeNum === volNum ? "bg-gradient-to-r from-zinc-800 via-zinc-700 to-zinc-800 border-zinc-600" : "hover:bg-zinc-800 focus:bg-zinc-800 border-transparent"} border-2 transition-all duration-300 min-w-[6rem] h-3/4 mx-3 rounded-md flex items-center`} draggable="false">
+            <h3 className="w-full text-center font-header font-bold text-sm m-0">
+                {`Volume ${volNum + 1}`}
+                <div className="w-full m-auto h-0">
+                    <div className={`${volumeNum === volNum ? "w-1 h-1 border-4 border-transparent border-t-white" : "w-0 h-0"} m-auto transition-all duration-300`}>
+                    </div>
+                </div>
             </h3>
         </Link>
     });
 
     return (<>
-        <Header width="66%" height="3" hasFlares="true" className="mt-4 sticky">
+        <Header width="66%" height="3" hasFlares="true" className="mt-4 sticky top-20">
             <nav className="h-full">
                 <Slider className="h-full">
                     {volumeListing}
