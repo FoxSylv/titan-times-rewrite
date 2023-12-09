@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import Slider from '../components/Slider';
 import { newsRegistry } from '../data/newsRegistry.js';
 import ANO from '../assets/ANO.png';
@@ -24,6 +25,10 @@ export default function Index() {
             </Link>
         </div>;
     });
+
+    useEffect(() => {
+        document.title = `Homepage - Titan Times`;
+    }, []);
 
     return (<>
         <section className="mt-16 pb-8 w-full">

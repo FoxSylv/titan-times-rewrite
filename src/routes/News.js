@@ -1,4 +1,5 @@
 import { Link, useParams, useRouteLoaderData } from 'react-router-dom';
+import { useEffect } from 'react';
 import ErrorPage from './ErrorPage';
 import Header from '../components/Header';
 import Slider from '../components/Slider';
@@ -10,6 +11,10 @@ export default function News() {
     const volumeNum = parseInt(newsLink.slice(3)) - 1; /* All volumes have an address of the form /news/volXX */
     const volume = volumes[volumeNum];
 
+    useEffect(() => {
+        document.title = `Volume ${volumeNum + 1} - Titan Times`;
+    }, [volumeNum]);
+
     const volumeListing = newsRegistry.map((newsData, volumeNum) => {
         return <Link to={`/news/vol${volumeNum + 1}`} key={`headerVol${volumeNum}`} className="hover:bg-zinc-800 focus:bg-zinc-800 transition-all duration-300 h-3/4 mx-3 rounded-md flex items-center" draggable="false">
             <h3 className="w-24 text-center font-header font-bold text-sm m-0">
@@ -19,7 +24,7 @@ export default function News() {
     });
 
     return (<>
-        <Header width="66%" height="3" hasFlares="true" className="mt-4 relative">
+        <Header width="66%" height="3" hasFlares="true" className="mt-4 sticky">
             <nav className="h-full">
                 <Slider className="h-full">
                     {volumeListing}
