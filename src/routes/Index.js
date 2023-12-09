@@ -9,13 +9,13 @@ export default function Index() {
             <p className="text-xs text-left">
                 {`📅 ${volData.dateOfPublication}`}
             </p>
-            <h2 className="text-2xl font-bold mt-4">
+            <h2 className="text-2xl font-bold mt-4 mb-0">
                 {`Volume ${volNum + 1}`}
             </h2>
-            <div className="mt-4 h-52 overflow-hidden relative">
-                <article className="text-left">
+            <div className="h-52 overflow-hidden relative">
+                <div className="text-left">
                     {volData.route /* Not a great solution, but will always display the preamble since the preamble is always first */}
-                </article>
+                </div>
                 <div className="w-full h-2/3 absolute bottom-0 bg-gradient-to-t from-white">
                 </div>
             </div>

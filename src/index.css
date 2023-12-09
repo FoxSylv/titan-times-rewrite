@@ -31,3 +31,54 @@ body {
     line-height: 1.7rem;
     color: rgb(38, 38, 38);
 }
+
+ul, ol, h1, h2, h3, h4, h5, h6 {
+    @apply mt-8;
+}
+p, center, table {
+    @apply my-4;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    @apply font-header font-bold;
+}
+h1 {
+    @apply text-5xl;
+}
+h2 {
+    @apply text-4xl;
+}
+h3 {
+    @apply text-3xl;
+}
+h4 {
+    @apply text-2xl;
+}
+h5 {
+    @apply text-xl;
+}
+h6 {
+    @apply text-lg;
+}
+
+article > p:first-child {
+    @apply text-zinc-400 border-l border-zinc-400 ml-4 md:ml-8 pl-4;
+}
+code {
+    @apply bg-zinc-100 text-red-500 px-2 py-1;
+}
+
+li::marker {
+    content: "•  ";
+}
+li {
+    @apply ml-8 md:ml-12;
+}
+
+table {
+    @apply w-3/4 m-auto;
+}
+tbody tr {
+    @apply border-t border-zinc-300 odd:bg-zinc-50;
+}
