@@ -10,11 +10,11 @@ export default function Volume5() {
         </h2>
         <p>
             Starting off, Patch #11 of the Spellbound Hero Beta was released earlier this month. This included the release of Shaman on the beta, plus a bunch of balance patches for assassin, and a handful of bug fixes (because Wynn is such a perfect game with absolutely 0 bugs
-            <img src="https://cdn.discordapp.com/emojis/740806911242403901.webp?size=80&quality=lossless" width="30px" />
+            <img src="https://cdn.discordapp.com/emojis/740806911242403901.webp?size=80&quality=lossless" alt="" width="30px" />
             ) Shaman mains rejoice as your time has come to test out the new content!
         </p>
         <center>
-            <img src="https://cdn.discordapp.com/attachments/1013872603997417592/1013872658871488532/2022-08-29_10.56.46_edited.png" width="66%" />
+            <img src="https://cdn.discordapp.com/attachments/1013872603997417592/1013872658871488532/2022-08-29_10.56.46_edited.png" alt="Biblonko as a shaman" width="66%" />
             <p>
                 Photo taken by Ugastag
             </p>
@@ -58,7 +58,7 @@ export default function Volume5() {
                 Biblonko
             </strong> and <strong>
                 Ugastag
-            </strong> have been promoted to Titan! <img src="https://cdn.discordapp.com/avatars/488082233375064076/eaf798f9b8d0618e11774536c69d6a30.webp?size=60" width="30px" />
+            </strong> have been promoted to Titan! <img src="https://cdn.discordapp.com/avatars/488082233375064076/eaf798f9b8d0618e11774536c69d6a30.webp?size=60" alt="" width="30px" />
         </p>
         <p>
             A couple of big promotions here, so congratulations to everyone on this list! Hope to see more new names up here next time!
@@ -195,7 +195,7 @@ export default function Volume5() {
         </h4>
         <p>
             “Among Us”
-            <img src="https://cdn.discordapp.com/emojis/941754991713079356.webp?size=40&quality=lossless" />
+            <img src="https://cdn.discordapp.com/emojis/941754991713079356.webp?size=40&quality=lossless" alt="Red amogus" />
         </p>
         <p>
             <em>
@@ -218,7 +218,7 @@ export default function Volume5() {
         Messier 51, or the Whirlpool Galaxy, was the first celestial object to be classified as a spiral galaxy. Here’s an image I took of it back in July!
     </TriviaFact>
     <center>
-        <img src="https://cdn.discordapp.com/attachments/717490202909737101/1013157660683669605/unknown.png" width="66%" />
+        <img src="https://cdn.discordapp.com/attachments/717490202909737101/1013157660683669605/unknown.png" alt="Messier 51" width="66%" />
     </center>
     <h3>
         Closing Remarks
