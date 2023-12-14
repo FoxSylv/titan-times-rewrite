@@ -31,11 +31,11 @@ export default function TriviaFact(props) {
                 </div>
                 <div className="w-16 border-t-[0.5rem] border-black ml-[calc(100%-6rem)]">
                 </div>
-            </div>
-            <div className="w-0 h-0 hidden lg:inline">
-                <div className="w-40 translate-y-28 -translate-x-16 relative -z-10">
-                    <img src={TriviaPose} alt="" width="100%" />
-                    <div className="w-full h-full absolute left-0 top-0 pointer-events-none bg-gradient-to-t from-white to-20%">
+                <div className="w-full h-0 hidden lg:inline">
+                    <div className="ml-auto w-40 -translate-y-12 translate-x-24 relative -z-10">
+                        <img src={TriviaPose} alt="" width="100%" />
+                        <div className="w-full h-full absolute left-0 top-0 pointer-events-none bg-gradient-to-t from-white to-20%">
+                        </div>
                     </div>
                 </div>
             </div>
