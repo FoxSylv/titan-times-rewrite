@@ -96,6 +96,6 @@ tbody tr {
     @apply border-t border-zinc-300 odd:bg-zinc-50;
 }
 
-.qna > p { /* Indent Q&A answers. See vol. 4 for an example */
+.indented > p { /* Can be used to indent Q&A answers. See vol. 4 for an example */
     @apply ml-4 md:ml-12;
 }

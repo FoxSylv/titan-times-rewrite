@@ -65,7 +65,7 @@ export default function Volume4() {
         <p>
             With  multiple patches having been released at this point, I wanted to get some of the guild members’ thoughts on the content we’ve seen thus far, and some predictions for the future. Most of the members interviewed this round have Hero+ rank and have played the beta, but not everyone was! Overall, ANO members seem to be excited for the final release of Spellbound, but let’s see what our thoughts are on the patches!
         </p>
-        <div className="qna">
+        <div className="indented">
             <h4>
                 Have you played on the Hero Beta yet? Which classes?
             </h4>
