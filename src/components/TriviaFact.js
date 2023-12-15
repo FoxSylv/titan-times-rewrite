@@ -2,8 +2,8 @@ import TriviaPose from '../assets/triviapose.png';
 
 export default function TriviaFact(props) {
     return (<>
-        <div className="flex flex-row">
-            <div className="flex flex-col">
+        <div className="w-full flex flex-row">
+            <div className="w-full flex flex-col">
                 <div className="w-[calc(100%-2rem)] m-auto border-t-[0.5rem] border-black">
                 </div>
                 <div className="w-[calc(100%-1rem)] m-auto h-2 border-x-[0.5rem] border-black">
