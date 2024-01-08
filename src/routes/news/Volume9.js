@@ -208,11 +208,13 @@ export default function Volume9() {
             Aemor played a huge role for us in getting to this point. He is one of the top GXP grinders in ANO history, but if it weren’t for him organizing and hosting the GXP grind event, it would have been much longer before we were able to reach this momentous goal. Thanks to him and a select few others, we were able to plow through 3 levels in a very short time. Make sure you send a little extra praise his way, he more than deserves it. Here’s a handful of pictures taken in celebration just after we reached 100!
         </p>
         <center>
-            <img src="https://cdn.discordapp.com/attachments/703019604968210482/1089367023483621517/dbe09337-e1be-41af-b287-0ae9226e2b9a.png" width="66%" alt="ANO photo" />
-            <img src="https://cdn.discordapp.com/attachments/703019604968210482/1089367022762213386/3b873854-6e53-4a2b-9369-32bb4f1074f8.png" width="66%" alt="ANO photo" />
-            <img src="https://cdn.discordapp.com/attachments/703019604968210482/1089367021017382932/4537ae1a-d29e-412e-bc83-fc77347de741.png" width="66%" alt="ANO photo" />
-            <img src="https://cdn.discordapp.com/attachments/703019604968210482/1089367024033087488/c9a7f957-6b91-46f8-97aa-e7096b7c08c9.png" width="66%" alt="ANO photo" />
-            <img src="https://cdn.discordapp.com/attachments/703019604968210482/1089367020581158962/1630d23d-653f-4e7f-825c-e87383d54822.png" width="66%" alt="ANO photo" />
+            <div className="album">
+                <img src="https://cdn.discordapp.com/attachments/703019604968210482/1089367023483621517/dbe09337-e1be-41af-b287-0ae9226e2b9a.png" width="100%" alt="ANO photo" />
+                <img src="https://cdn.discordapp.com/attachments/703019604968210482/1089367022762213386/3b873854-6e53-4a2b-9369-32bb4f1074f8.png" width="100%" alt="ANO photo" />
+                <img src="https://cdn.discordapp.com/attachments/703019604968210482/1089367021017382932/4537ae1a-d29e-412e-bc83-fc77347de741.png" width="100%" alt="ANO photo" />
+                <img src="https://cdn.discordapp.com/attachments/703019604968210482/1089367024033087488/c9a7f957-6b91-46f8-97aa-e7096b7c08c9.png" width="100%" alt="ANO photo" />
+                <img src="https://cdn.discordapp.com/attachments/703019604968210482/1089367020581158962/1630d23d-653f-4e7f-825c-e87383d54822.png" width="100%" alt="ANO photo" />
+            </div>
         </center>
         <p>
             To celebrate this momentous occasion, I will be hosting an Item Bomb Party and throwing <strong>
